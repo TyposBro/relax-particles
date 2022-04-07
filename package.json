@@ -5,7 +5,7 @@
   "main": "script.js",
   "scripts": {
     "deploy": "npm run gh-pages",
-    "gh-pages": "gh-pages -d . -b gh-pages"
+    "gh-pages": "gh-pages -d . -b master"
   },
   "repository": {
     "type": "git",
