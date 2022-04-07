@@ -22,11 +22,7 @@ const mouse = {
 canvas.addEventListener("mousedown", (e) => {
   canvas.height = window.innerHeight;
   canvas.width = window.innerWidth;
-  particles.splice(0, particles.length);
-
   init(e);
-
-  console.log(particles[0].speedX);
 });
 
 class Particle {
