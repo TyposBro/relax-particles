@@ -24,6 +24,8 @@ const mouse = {
 // };
 
 canvas.addEventListener("mousedown", (e) => {
+  canvas.height = window.innerHeight;
+  canvas.width = window.innerWidth;
   init(e);
 });
 
