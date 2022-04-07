@@ -1,0 +1,27 @@
+{
+  "name": "relax-particles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "deploy": "npm run gh-pages",
+    "gh-pages": "gh-pages -d . -b gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khasanjonovich/relax-particles.git"
+  },
+  "keywords": [
+    "canvas",
+    "2d"
+  ],
+  "author": "khasanjonovich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khasanjonovich/relax-particles/issues"
+  },
+  "homepage": "https://khasanjonovich.github.io/relax-particles",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
