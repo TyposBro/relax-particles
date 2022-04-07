@@ -40,11 +40,12 @@ class Particle {
   update() {
     this.x += this.speedX;
     this.y += this.speedY;
+    this.size += 0.2;
   }
   draw() {
     ctx.fillStyle = "#FFD36E";
     ctx.beginPath();
-    ctx.arc(this.x, this.y, 30, 0, Math.PI * 2);
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
     ctx.fill();
   }
 }
@@ -57,8 +58,15 @@ const init = (e) => {
 
 const animate = () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  particles.forEach((p) => p.draw());
-  particles.forEach((p) => p.update());
+  particles.forEach((p) => {
+    p.draw();
+    p.update();
+  });
+
+  particles.filter((a) => {
+    return a <= 0.3;
+  });
+
   requestAnimationFrame(animate);
 };
 animate();
