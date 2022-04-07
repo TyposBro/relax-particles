@@ -4,7 +4,11 @@ console.log(canvas);
 console.log(ctx);
 const particles = [];
 
-window.addEventListener("resize", () => {});
+window.addEventListener("resize", () => {
+  canvas.height = window.innerHeight;
+  canvas.width = window.innerWidth;
+  particles.forEach((p) => p.draw());
+});
 
 const mouse = {
   x: Math.random() * 100,
@@ -20,8 +24,6 @@ const mouse = {
 // };
 
 canvas.addEventListener("mousedown", (e) => {
-  canvas.height = window.innerHeight;
-  canvas.width = window.innerWidth;
   init(e);
 });
 
