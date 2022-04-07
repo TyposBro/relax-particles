@@ -42,7 +42,7 @@ class Particle {
     this.y += this.speedY;
   }
   draw() {
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "#FFD36E";
     ctx.beginPath();
     ctx.arc(this.x, this.y, 30, 0, Math.PI * 2);
     ctx.fill();
